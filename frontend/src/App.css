@@ -1,0 +1,125 @@
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+  color: #4a5568;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.upload-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.upload-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.upload-form input,
+.upload-form select {
+  padding: 0.55rem 0.65rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.upload-form button {
+  justify-self: start;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.upload-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #b91c1c;
+  margin: 0.5rem 0 0;
+}
+
+.sheet-viewer h2 {
+  margin-top: 0;
+}
+
+.sheet-meta {
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.osmd-container {
+  overflow-x: auto;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: #fafafa;
+}
+
+.tab-block pre {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  line-height: 1.4;
+}
+
+.tab-editor {
+  width: 100%;
+  font-family: "Courier New", monospace;
+  line-height: 1.4;
+  padding: 0.65rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.actions button {
+  padding: 0.5rem 0.85rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+@media print {
+  .panel:first-of-type,
+  .actions {
+    display: none;
+  }
+
+  .app {
+    max-width: none;
+    padding: 0;
+  }
+}

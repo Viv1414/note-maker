@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+python-multipart
+pydantic-settings
+music21

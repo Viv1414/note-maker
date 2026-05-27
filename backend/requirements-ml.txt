@@ -1,0 +1,22 @@
+# Optional ML transcription (audio -> MIDI via basic-pitch)
+#
+# REQUIRES Python 3.11 or 3.12. TensorFlow does NOT support Python 3.14.
+#
+# If your default `python` is 3.14 (common on fresh Windows installs), use one of:
+#   py -3.12 -m venv .venv-ml
+#   C:\ProgramData\anaconda3\python.exe -m venv .venv-ml
+#
+# Then:
+#   .\.venv-ml\Scripts\activate
+#   pip install -r requirements-ml.txt
+#
+# Run the main backend with your normal Python 3.14 venv — ML libs are imported
+# only when basic-pitch is available in that same environment.
+#
+# If pip fails with SSL/certificate errors (common with Anaconda), try:
+#   pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements-ml.txt
+#
+# If install still fails, the app works fine without this file — it uses placeholder sheets.
+
+basic-pitch
+tensorflow
